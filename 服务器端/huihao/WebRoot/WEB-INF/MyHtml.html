@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+body {padding:0;margin:40px;font-size:9pt;font-family:Helvetica,Geneva,sans-serif;}
+h3 {font-weight:normal;display:block;width:600px;text-align:center;}
+/*ul*/
+ul#q-graph {
+border:2px solid #0063be;
+background:#adfe12 url(http://www.webjx.com/files/080526/1_153652.png) repeat-x scroll 0 0 !important;
+background:#adfe12 repeat-x scroll 0 0;
+height:300px !important;
+height:304px;
+width:600px;
+position:relative;
+list-style:none;
+margin:1.1em 1em 3.5em;
+padding:0;
+}
+#q-graph li {
+position:absolute;
+text-align:center;
+bottom:0;
+padding:0
+margin:0;
+}
+/* ul li */
+li.qtr {
+width:150px;
+height:300px;
+border-right:1px dotted #41a3e2;
+z-index:2;
+}
+li#q1 {left:0;}
+li#q2 {left:150px;}
+li#q3 {left:300px;}
+li#q4 {left:450px;border-right:none;}
+/* ul li ul */
+#q-graph ul {list-style:none;}
+/* ul li ul li */
+li.bar {
+width:34px;
+color:#fff;
+}
+li.north {
+left:36px;
+background:#ddd url(http://www.webjx.com/files/080526/1_153734.gif) no-repeat 0 0;
+}
+li.south {
+left:80px;
+background:#ddd url(http://www.webjx.com/files/080526/1_153734.gif) no-repeat -34px 0;
+}
+/* ul li divs */
+li#ticks {
+left:0;
+height:300px;
+width:100%;
+z-index:1;
+}
+div.ticks {
+position:relative;
+height:60px;
+border-top:1px dotted #41a3e2;
+}
+div.ticks:first-child {border-top:none;}	/*only4 Firefx IE 7+*/
+div.ticks p {
+position:absolute;
+left:103%;
+top:-11pt;
+}
+</style>
+</head>
+<body>
+<ul id="q-graph">
+<li id="q1" class="qtr">Q1
+<ul>
+<li class="north bar" style="height:111px;">18</li>
+<li class="south bar" style="height:99px;">16</li>
+</ul></li>
+<li id="q2" class="qtr">Q2
+<ul>
+<li class="north bar" style="height:198px;">32</li>
+<li class="south bar" style="height:210px;">34</li>
+</ul></li>
+<li id="q3" class="qtr">Q3
+<ul>
+<li class="north bar" style="height:260px;">43</li>
+<li class="south bar" style="height:198px;">32</li>
+</ul></li>
+<li id="q4" class="qtr">Q4
+<ul>
+<li class="north bar" style="height:111px;">18</li>
+<li class="south bar" style="height:198px;">32</li>
+</ul></li>
+<li id="ticks">
+<div class="ticks"><p>50</p></div>
+<div class="ticks"><p>40</p></div>
+<div class="ticks"><p>30</p></div>
+<div class="ticks"><p>20</p></div>
+<div class="ticks"><p>10</p></div>
+</li>
+</ul>
+</body>
+</html>

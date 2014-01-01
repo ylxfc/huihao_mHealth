@@ -1,0 +1,20 @@
+服务器端部署：
+环境要求：
+tomcat6.0及以上版本
+mysql5.0及以上版本
+将服务器文件夹下的WebRoot文件夹考到tomcat下Webapps目录下
+将数据库脚本文件huihao.sql导入到数据库中
+数据库账号：root
+数据库密码：123456
+
+启动tomcat服务，启动mysql服务
+在浏览器中输入：localhost:8080/WebRoot即可访问
+
+测试账号：
+管理员：xfc	密码：xfc
+业务员：012111	密码：012111
+业务员：012112	密码：012112
+业务员：012113	密码：012113
+
+客户端部署：
+将客户端文件夹下的huihao文件夹导入到含有ADT插件的eclipse或Android Studio中，打开包com.yuli.huihao.tool下的Constant.java类，将其中的IP常量换为服务器测试用机的IP(在服务器用机上启动cmd,并输入ipconfig,即可获得服务器用机的IP),然后导出一个APK文件，传入Android2.2系统以上的手机即可运行。

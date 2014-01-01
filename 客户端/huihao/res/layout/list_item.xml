@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:id="@+id/info_qzone_mail" 
+	android:background="@drawable/shape_bg" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10.0dip" 
+	android:layout_marginTop="10.0dip" 
+	android:layout_marginRight="10.0dip"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+  	
+    <LinearLayout
+        android:id="@+id/mail"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10.0dip"
+            android:src="@drawable/friend_info_mail" />
+
+
+            <TextView
+                android:id="@+id/listitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="fhsdhfoldskhfioshfshduaiohsoishfdiosahfosahfi8w"
+                android:textColor="#ff545454"
+                android:textSize="18.0sp" />
+            
+		<TextView
+                android:id="@+id/listdata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="7-3 19:00"
+                android:textColor="#ff545454"
+                android:textSize="10.0sp" />
+        <ImageView
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_marginRight="10.0dip"
+            android:src="@drawable/into_icon" />
+    </LinearLayout>
+    
+    <View
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="1.0px" />
+
+</LinearLayout>

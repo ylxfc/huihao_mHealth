@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+  android:orientation="vertical" 
+  android:background="@drawable/shape_bg" 
+  android:layout_width="fill_parent" 
+  android:layout_height="wrap_content" 
+  android:layout_marginLeft="10.0dip" 
+  android:layout_marginTop="10.0dip"
+  android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  
+    <LinearLayout 
+	    android:gravity="center_vertical" 
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="50.0dip">
+	    
+        <TextView 
+            android:textSize="18.0sp" 
+            android:textColor="@android:color/black" 
+            android:paddingLeft="15.0dip" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:text="优惠信息一" android:layout_weight="1.0" />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent"
+		android:layout_height="1.0px" />
+    <LinearLayout 
+	    android:gravity="center_vertical" 
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">
+	    
+        <TextView 
+            android:id="@+id/youhui1"
+            android:textSize="18.0sp" 
+            android:textColor="#ff545454" 
+            android:paddingLeft="15.0dip" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:text="无优惠信息" android:layout_weight="1.0" />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent"
+		android:layout_height="1.0px" />
+    <LinearLayout 
+	    android:gravity="center_vertical" 
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="50.0dip">
+	    
+        <TextView 
+            android:textSize="18.0sp" 
+            android:textColor="@android:color/black" 
+            android:paddingLeft="15.0dip" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:text="优惠信息二" android:layout_weight="1.0" />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent"
+		android:layout_height="1.0px" />
+    
+    <LinearLayout 
+	    android:gravity="center_vertical" 
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">
+	    
+        <TextView 
+            android:id="@+id/youhui2"
+            android:textSize="18.0sp" 
+            android:textColor="#ff545454" 
+            android:paddingLeft="15.0dip" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:text="无优惠信息" android:layout_weight="1.0" />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent"
+		android:layout_height="1.0px" />
+    <LinearLayout 
+	    android:gravity="center_vertical" 
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="50.0dip">
+	    
+        <TextView 
+            android:textSize="18.0sp" 
+            android:textColor="@android:color/black" 
+            android:paddingLeft="15.0dip" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:text="优惠信息三" android:layout_weight="1.0" />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent"
+		android:layout_height="1.0px" />
+    
+    <LinearLayout 
+	    android:gravity="center_vertical" 
+	    android:orientation="horizontal" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">
+	    
+        <TextView 
+            android:id="@+id/youhui3"
+            android:textSize="18.0sp" 
+            android:textColor="#ff545454"  
+            android:paddingLeft="15.0dip" 
+            android:layout_width="0.0dip" 
+            android:layout_height="wrap_content" 
+            android:text="无优惠信息" android:layout_weight="1.0" />
+        
+    </LinearLayout>
+    
+    <View 
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent"
+		android:layout_height="1.0px" />
+    
+
+</LinearLayout>

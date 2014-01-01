@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.yuli.huihao"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name">
+        <activity
+            android:name=".Welcome"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.yuli.huihao.home.HomeActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.yuli.huihao.person.PersonActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.yuli.huihao.work.WorkActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name="com.yuli.huihao.search.SearchActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity
+            android:name=".MoreActivity"
+            android:theme="@android:style/Theme.NoTitleBar">
+        </activity>
+        <activity 
+            android:name=".Userlogin"
+            android:theme="@android:style/Theme.NoTitleBar">  
+        </activity>
+        <activity 
+            android:name="com.yuli.huihao.home.HomeInfo"
+            android:theme="@android:style/Theme.NoTitleBar">  
+        </activity>
+        <activity 
+            android:name="com.yuli.huihao.work.AddWorkPlan"
+            android:theme="@android:style/Theme.NoTitleBar">  
+        </activity>
+        
+        <!-- 极光推送 -->
+        
+        
+    </application>
+
+    <!-- 极光推送 -->
+    
+    <!-- Required -->
+   
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+</manifest>

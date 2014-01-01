@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+		android:orientation="vertical" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		
+		xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+	    
+        <TextView
+	            android:id="@+id/work_add"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:layout_gravity="left|center_vertical"
+	            android:padding="8dip"
+	            android:text="添加" />
+	    <TextView 
+	        android:textSize="18.0sp"
+	        android:textColor="@android:color/white"
+	        android:background="#000000"
+	        android:padding="12.0dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="46.0dip"
+	        android:layout_gravity="center"
+	        android:text="工作计划"/>
+	    
+	    <TextView
+	            android:id="@+id/work_send"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:layout_gravity="right|center_vertical"
+	            android:padding="8dip"
+	            android:text="发送" />
+    </FrameLayout>
+    
+    <LinearLayout 
+			    
+			    android:background="@color/base_bg"
+			    android:orientation="vertical" 
+	      		android:layout_width="fill_parent" 
+	      		android:layout_height="fill_parent" 
+	      		android:isScrollContainer="true">
+	    
+			    <LinearLayout 
+		        android:gravity="center_vertical"
+		        android:orientation="vertical" 
+				android:background="@drawable/shape_bg" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="10.0dip"  
+				android:layout_marginRight="10.0dip">
+	    <ListView 
+		    android:id="@+id/worklist" 
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+	  	</ListView>
+	  	</LinearLayout>
+	  	</LinearLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

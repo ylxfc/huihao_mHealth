@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "struts-config_1_3.dtd">
+<struts-config>
+	<form-beans>
+		<form-bean name="registerFormBean" type="actionForm.RegisterActionForm"></form-bean>
+		<form-bean name="loginFormBean" type="actionForm.LoginActionForm"></form-bean>
+		<form-bean name="modifyUserMessFormBean" type="actionForm.RegisterActionForm"></form-bean>
+		<form-bean name="pillFormBean" type="actionForm.RegisterPill"></form-bean>
+		<form-bean name="addPostFormBean" type="actionForm.AddNewsActionForm"></form-bean>
+		<form-bean name="modifyNewsFormBean" type="actionForm.AddNewsActionForm"></form-bean>
+	</form-beans>
+	<action-mappings>
+			
+		<action path="/reg" type="action.RegisterAction" name="registerFormBean" scope="request">
+			<forward name="success" path="/manage_isManage.jsp"></forward>
+			<forward name="userExisting" path="/isExistingUser.jsp"></forward>
+			<forward name="error" path="/addError.jsp"></forward>
+		</action>
+		<action path="/newPill" type="action.RegisterPillAction" name="pillFormBean" scope="request">
+			<forward name="success" path="/productList.jsp"></forward>
+			<forward name="pillExisting" path="/isExistingPill.jsp"></forward>
+			<forward name="error" path="/addError.jsp"></forward>
+		</action>
+		
+		<action path="/log" type="action.LoginAction" name="loginFormBean" scope="request">
+			<forward name="success" path="/main.jsp"></forward>
+			<forward name="error" path="/error.jsp"></forward>
+			<forward name="codeError" path="/codeError.jsp"></forward>
+		</action>
+		
+		<action path="/exit" type="action.ExitAction">
+			<forward name="success" path="/index.jsp"></forward>
+		</action>
+		<action path="/manageproduct" type="action.ManagerNewsTurnPageAction" scope="request">
+			<forward name="success" path="/productList.jsp"></forward>
+		</action>
+		<action path="/manageproduct1" type="action.ManagerNewsTurnPageAction" scope="request">
+			<forward name="success" path="/productList1.jsp"></forward>
+		</action>
+		<action path="/addPost" name="addPostFormBean" type="action.AddPostAction" scope="request">
+			<forward name="success" path="/transparent_isManager.jsp"></forward>
+			<forward name="error" path="/addError.jsp"></forward>
+		</action>
+		<action path="/deletePill" type="action.DeletePillAction" scope="request">
+			<forward name="success" path="/productList.jsp"></forward>
+			<forward name="error" path="/deleteError.jsp"></forward>
+		</action>
+		<action path="/deletePost" type="action.DeletePostAction" scope="request">
+			<forward name="success" path="/transparent_isManager.jsp"></forward>
+			<forward name="error" path="/deleteError.jsp"></forward>
+		</action>
+		<action path="/deleteAgency" type="action.DeleteAgencyAction" scope="request">
+			<forward name="success" path="/Agencyis.jsp"></forward>
+			<forward name="error" path="/deleteError.jsp"></forward>
+		</action>
+		<action path="/managerUser" type="action.ManagerUserTurnPageAction" scope="request">
+			<forward name="success" path="/manage_isManage.jsp"></forward>
+			<forward name="error" path="/turnError.jsp"></forward>
+		</action>   
+		<action path="/managerPost" type="action.ManagePostAction" scope="request">
+			<forward name="success" path="/transparent_isManager.jsp"></forward>
+		</action> 
+			<action path="/managerPost1" type="action.ManagePostAction" scope="request">
+			<forward name="success" path="/transparent_notManager.jsp"></forward>
+		</action>  
+		<action path="/deleteUser" type="action.DeleteUserAction" scope="request">
+			<forward name="success" path="/manage_isManage.jsp"></forward>
+			<forward name="error" path="/deleteError.jsp"></forward>
+		</action>
+	<action path="/updateUser" type="action.updateUserAction" name="registerFormBean" scope="request">
+			<forward name="success" path="/Content.jsp"></forward>
+			<forward name="error" path="/editError.jsp"></forward>
+		</action>
+		<action path="/updatePill" type="action.updatePill" name="pillFormBean" scope="request">
+			<forward name="success" path="/productList.jsp"></forward>
+			<forward name="error" path="/editError.jsp"></forward>
+		</action>
+	</action-mappings>
+</struts-config>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+        
+         <FrameLayout 
+	        android:id="@+id/main_tab_banner"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:paddingLeft="10dip"
+	        android:paddingRight="10dip" >
+        
+             
+	     
+	    <TextView 
+	        android:textSize="18.0sp"
+	        android:textColor="@android:color/white"
+	        android:background="#000000"
+	        android:padding="12.0dip"
+	        android:layout_width="wrap_content"
+	        android:layout_height="46.0dip"
+	        android:layout_gravity="center"
+	        android:text="了解更多"/>
+	    
+	    <TextView
+	            android:id="@+id/more_zhuxiao"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:clickable="true"
+	            android:focusable="true"
+	            android:layout_gravity="right|center_vertical"
+	            android:padding="8dip"
+	            android:text="注销" />
+	    
+	</FrameLayout>
+	
+	<ScrollView
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:background="@color/info_panel_bg"
+	    android:scrollbarThumbVertical="@drawable/scrollbar_handle_vertical"
+	    android:layout_weight="1.0">
+	    
+		<LinearLayout 
+		    android:orientation="vertical" 
+      		android:paddingBottom="10.0dip" 
+      		android:background="@color/base_bg"
+      		android:layout_width="fill_parent" 
+      		android:layout_height="fill_parent" 
+      		android:isScrollContainer="true">
+      		
+		    <!-- 第一个白框 -->
+		    <LinearLayout 
+		        android:gravity="center_vertical"
+		        android:orientation="vertical" 
+				android:background="@drawable/shape_bg" 
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:layout_marginLeft="10.0dip" 
+				android:layout_marginTop="7.0dip" 
+				android:layout_marginRight="10.0dip">
+		        
+		        <LinearLayout 
+		            android:gravity="center_vertical" 
+               		android:orientation="horizontal" 
+               		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+               		android:padding="10.0dip" 
+               		android:minHeight="50.0dip">
+		            
+		            <TextView 
+		                android:textSize="18.0sp" 
+		                android:textColor="@android:color/black" 
+		                android:paddingLeft="5.0dip" 
+		                android:layout_width="wrap_content" 
+		                android:layout_height="wrap_content" 
+		                android:text="应用" />
+                    
+		            <TextView 
+	                    android:id = "@+id/person_name"
+	                    android:textSize="18.0sp" 
+	                    android:textColor="#ff545454" 
+	                    android:layout_marginLeft="10.0dip" 
+	                    android:layout_marginRight="10.0dip" 
+	                    android:gravity="right"
+	                	android:clickable="false"
+	                    android:layout_width="0.0dip"
+	                    android:layout_height="wrap_content"                
+	                    android:text="惠好制药移动应用"               
+	                    android:maxLines="1"
+	                    android:maxLength="10"
+	      				android:background="@android:color/white"
+	      				android:layout_weight="1.0"/>
+		            
+		            
+		            
+		        </LinearLayout>
+		        
+		        <View 
+	           		android:background="@drawable/shape_line" 
+	           		android:layout_width="fill_parent" 
+	           		android:layout_height="1.0px" />
+		        
+		        <LinearLayout 
+		            android:gravity="center_vertical" 
+               		android:orientation="horizontal" 
+               		android:layout_width="fill_parent" 
+              		android:layout_height="wrap_content" 
+               		android:padding="10.0dip" 
+               		android:minHeight="50.0dip">
+		            
+		            <TextView 
+		                android:textSize="18.0sp" 
+		                android:textColor="@android:color/black" 
+		                android:paddingLeft="5.0dip" 
+		                android:layout_width="wrap_content" 
+		                android:layout_height="wrap_content" 
+		                android:text="版本" />
+                    
+		            <TextView 
+	                    android:id = "@+id/person_num"
+	                    android:textSize="18.0sp" 
+	                    android:textColor="#ff545454" 
+	                    android:layout_marginLeft="10.0dip" 
+	                    android:layout_marginRight="10.0dip" 
+	                	android:clickable="false"
+	                    android:layout_width="0.0dip"
+	                    android:layout_height="wrap_content" 
+	                    android:gravity="right"               
+	                    android:text="V1.0"               
+	                    android:maxLines="1"
+	                    android:maxLength="10"
+	      				android:background="@android:color/white"
+	      				android:layout_weight="1.0"/>
+		            
+		        </LinearLayout>
+		    </LinearLayout>
+		    <!-- 第二个白框 -->
+		    <LinearLayout 
+		        android:layout_width="fill_parent" 
+		        android:layout_height="wrap_content">
+	            <include layout="@layout/info_more" />
+	        </LinearLayout>
+		</LinearLayout>
+</ScrollView>
+</LinearLayout>
+</RelativeLayout>

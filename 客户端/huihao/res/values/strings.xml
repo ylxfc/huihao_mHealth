@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">huihao</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <!-- 个人信息模块 -->
+    <string name="main_home">主页</string>
+	<string name="main_person">个人</string>
+	<string name="main_work">工作</string>
+	<string name="main_search">搜索</string>
+	<string name="main_more">更多</string>
+	<!-- 公司通知模块 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">刷新...</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh...</string>
+    <string name="moreinfo">本软件为惠好制药有限公司移动应用系统的客户端。主要使用对象为公司的业务员，主要功能包括公司信息接收，个人信息查询，工作计划制定，预购信息上传，公司产品查询等。</string>
+</resources>

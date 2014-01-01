@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_bg">#A0CCFF99</color>
+    <color name="window_bg">#fff0f3f6</color>
+    
+    <color name="transparent">#00000000</color>
+    
+    <color name="title_bg">#ff54acea</color>
+
+    <color name="button_unselected">#ff54acea</color>
+    <color name="button_selected">#ff419de4</color>
+
+    <color name="info_panel_bg">#ffeeeeee</color>
+     
+    
+    
+    <!-- traffic -->
+    <color name="traffic_bg">#A0CCFF99</color>
+    <color name="traffic_txt">#000000</color>
+    <color name="traffic_data">#ff666666</color>
+    <color name="traffic_button1">#A099CC33</color>
+    <color name="traffic_button2">#A0CCFF99</color>
+	<color name="traffic_chat_title_name">#000000</color>
+	
+	<!-- login buttons -->
+	<color name="login_button_text">#FFFFFF</color>
+	<color name="login_button_press">#0099FF</color>
+	<color name="login_button_normal">#900099FF</color>
+	
+	<color name="login_cancel_text">#90000000</color>
+	<color name="login_cancel_press">#40ffffff</color>
+	<color name="login_cancel_normal">#90ffffff</color>
+	
+	<!-- login edittext -->
+	<color name="login_edittext_focuse">#99CC00</color>
+	<color name="login_edittext_normal">#FFFFFF</color>
+    
+</resources>

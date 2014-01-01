@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+	android:orientation="vertical" 
+	android:id="@+id/info_qzone_mail" 
+	android:background="@drawable/shape_bg" 
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content" 
+	android:layout_marginLeft="10.0dip" 
+	android:layout_marginTop="10.0dip" 
+	android:layout_marginRight="10.0dip"
+  	xmlns:android="http://schemas.android.com/apk/res/android">
+  	
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/jingxsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="1.0"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="武汉市人民医院"
+                android:textColor="#ff545454"
+                android:textSize="18.0sp" />
+            
+			<TextView
+                android:id="@+id/visitedData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10.0dip"
+                android:layout_weight="0"
+                android:ellipsize="end"
+                android:maxEms="6"
+                android:singleLine="true"
+                android:text="2013-07-03"
+                android:textColor="#ff545454"
+                android:textSize="10.0sp" />
+			
+	        <ImageView
+	            android:layout_width="12.0dip"
+	            android:layout_height="12.0dip"
+	            android:layout_marginRight="10.0dip"
+	            android:src="@drawable/into_icon" />
+    </LinearLayout>
+    
+    <View
+	    android:background="@drawable/shape_line" 
+	    android:layout_width="fill_parent" 
+	    android:layout_height="1.0px" />
+
+</LinearLayout>
